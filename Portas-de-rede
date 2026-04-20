@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void){
+    int number;
+
+    scanf("%d", &number);
+
+    switch(number){
+        case 22:
+        printf("SSH");
+        break;
+        case 80:
+        printf("HTTP");
+        break;
+        case 443:
+        printf("HTTPS");
+        break;
+        case 21:
+        printf("FTP");
+        break;
+        default:
+        printf("Desconhecido");
+    }
+    return 0;
+}
