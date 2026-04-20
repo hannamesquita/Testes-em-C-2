@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main(void){
+    double NOTA;
+
+    scanf("%lf", &NOTA);
+
+    if((NOTA>=0.0) && (NOTA<=3.9)){
+        printf("Baixa");
+    } else if((NOTA>=4.0) && (NOTA<=6.9)){
+        printf("Media");
+    }
+    if((NOTA>=7.0) && (NOTA<=8.9)){
+        printf("Alta");
+    }
+    if((NOTA>=9.0) && (NOTA<=10.0)){
+        printf("Critica");
+    }
+    return 0;
+}
