@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(void){
+    int IP;
+
+    scanf("%d", &IP);
+
+    if (IP == 127){
+        printf("Loopback/Localhost");
+    } else if((IP > 0) && (IP < 255)){
+        printf("IP Externo");
+    }
+    return 0;
+}
