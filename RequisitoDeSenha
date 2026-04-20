@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void){
+    int entrada;
+
+    scanf("%d", &entrada);
+
+    if(entrada != 0){
+        if(entrada < 8){
+            printf("Insegura");
+        } else {
+            printf("Segura");
+        }
+    }
+    return 0;
+}
