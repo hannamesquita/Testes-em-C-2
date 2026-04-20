@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main(){
+    int IP;
+    double horario;
+    int tentativas;
+
+    scanf("%d %lf %d", &IP, &horario, &tentativas);
+
+    if((IP != 1) && (IP != 2)){
+        printf("ERRO_SISTEMA");
+    }
+
+    if(IP == 1){
+        if(tentativas > 3){
+            printf("REQUER_2FA");
+        }
+        if(((horario>8.0) && (horario<18.0)) && 
+           (tentativas <= 3)) {
+            printf("ACESSO_LIBERADO");
+        }
+        
+    } else if(IP == 2){
+        if((horario < 8.0) || (horario > 18.0)) {
+            printf("BLOQUEADO");
+        } else {
+            printf("REQUER_2FA");
+        }
+    }
+}
