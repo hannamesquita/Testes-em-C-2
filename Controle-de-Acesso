@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void){
+    int COD;
+
+    scanf("%d", &COD);
+
+    switch(COD){
+        case 1:
+        printf("Usuário");
+        break;
+        case 2:
+        printf("Moderador");
+        break;
+        case 3:
+        printf("Administrador");
+        break;
+        default:
+        printf("Acesso Negado");
+    }
+    return 0;
+}
