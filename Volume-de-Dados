@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main(void){
+    int volume;
+
+    scanf("%d", &volume);
+
+    if(volume < 100){
+        printf("Normal");
+    }
+    if((volume>=100) && (volume<=500)){
+        printf("Suspeito");
+    } else if (volume > 500){
+        printf("Alerta de Exfiltracao");
+        printf("\n");
+    }
+    return 0;
+}
